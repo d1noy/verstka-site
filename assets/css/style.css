@@ -197,6 +197,7 @@ transform: rotate(90deg);
 
 #rateYo {
   position: relative;
+  display: block;
   top: -60%;
   left: 86%;
   padding: 24px 92px;
@@ -222,6 +223,7 @@ transform: rotate(90deg);
   line-height: 36px;
   letter-spacing: -0.03em;
   white-space: nowrap;
+  display: block;
 }
 
 
@@ -297,18 +299,23 @@ transform: rotate(90deg);
   display: flex;
   flex-direction: column;
   background: #F2F2F2;
+  height: 100vh;
 }
 .offer {
-  padding-top: 128px;
+  padding-top: 25px;
 }
 .offer__inner {
   align-items: center;
 }
+
+
 .offer__car {
 }
 .offer__content-car {
 }
 .offer__title {
+  border-top: 52px solid #D9D9D9;
+  padding-top: 51px;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -328,4 +335,69 @@ transform: rotate(90deg);
   letter-spacing: -0.03em;
 }
 .offer__repair-car {
+  margin-bottom: 8px;
+  align-items: center;
+  width: 316px;
+  height: 232px;
+  background: #ffffff;
+  transition: all .3s;
+}
+
+.offer__diagnostics{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  vertical-align: middle;
+  transform: translate(-3px, 67px);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__diagnostics svg{
+  margin-bottom: 16px;
+}
+
+.offer__repair-car:hover {
+  color: #FFFFFF;
+  background-color: #FF6433;
+}
+
+.offer__repair-car:hover svg path{
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.offer__bodywork {
+  display: flex;
+  justify-content: center;
+  transform: translate(-3px, 86px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__bodywork svg{
+  margin-bottom: 16px;
+}
+
+.car { 
+  transform: translate(103%, -207%);
+}
+
+.continuation { 
+  transform: translate(206%, -414%);
+}
+
+.cont {
+  transform: translate(309%, -620%);
 }
