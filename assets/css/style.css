@@ -20,7 +20,7 @@ html,body {
 .header {
   background-color :#FFFFFF; 
   padding-top: 31px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -196,10 +196,10 @@ transform: rotate(90deg);
 }
 
 #rateYo {
-  position: relative;
-  display: block;
-  top: -60%;
-  left: 86%;
+
+  display: flex;
+  /* top: -60%;
+  left: 86%; */
   padding: 24px 92px;
   padding-right: 36px;
   margin-left: 10px;
@@ -210,27 +210,30 @@ transform: rotate(90deg);
   white-space: nowrap;
 }
 
+.rating__inner {
+  position: relative;
+  top: 74px;
+  left: 45px;
+  z-index: 1;
+}
+
 .header__rating {
   position: relative;
+  left: 78%;
+  bottom: 960px;
   align-items: center;
-  z-index: 5;
   margin-left: 34px;
-  left: 87%;
-  top: -55%;
   color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 24px;
-  line-height: 36px;
   letter-spacing: -0.03em;
   white-space: nowrap;
-  display: block;
 }
 
 
 .header__rating-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   opacity: 0.7;
   white-space: nowrap;
 }
@@ -288,7 +291,6 @@ transform: rotate(90deg);
 .header__row-subtitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 175%;
   color: #1E1B1B;
   margin-bottom: 135px;
 }
@@ -299,20 +301,18 @@ transform: rotate(90deg);
   display: flex;
   flex-direction: column;
   background: #F2F2F2;
-  height: 100vh;
+  height: 100%;
+  margin-top: -500px;
 }
 .offer {
   padding-top: 25px;
+  margin-bottom: -900px;
+
 }
 .offer__inner {
   align-items: center;
 }
 
-
-.offer__car {
-}
-.offer__content-car {
-}
 .offer__title {
   border-top: 52px solid #D9D9D9;
   padding-top: 51px;
@@ -353,7 +353,6 @@ transform: rotate(90deg);
   font-size: 24px;
   line-height: 36px;
   
-  /* identical to box height, or 150% */
   text-align: center;
   letter-spacing: -0.03em;
 }
@@ -375,7 +374,54 @@ transform: rotate(90deg);
 .offer__bodywork {
   display: flex;
   justify-content: center;
-  transform: translate(-3px, 86px);
+  transform: translate(0px, 86px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__bodywork svg{
+  margin-bottom: 16px;
+}
+
+.offer__engine {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+  transform: translate(0px, 71px);
+
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__battery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  transform: translate(0px, 86px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__wheelrepair {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+  transform: translate(-1px, 71px);
 
   font-weight: 600;
   font-size: 24px;
@@ -386,8 +432,69 @@ transform: rotate(90deg);
   letter-spacing: -0.03em;
 }
 
-.offer__bodywork svg{
+.offer__shield {
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
+  transform: translate(0px, 86px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__oil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+  transform: translate(-1px, 71px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__gaskey {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  transform: translate(0px, 86px);
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.offer__text {
+  transition: all .3s;
+  display: flex;
+  position: relative;
+  top: -1400px;
+  left: 1050px;
+}
+
+.text:hover {
+  transform: scale(1.1);
+  color: #FF6433;
+}
+
+.strelka {
+  transform: translate(15%, 17px);
+}
+
+.strelka:hover svg path{
+  stroke: #FF6433;
+  fill: #FF6433;
 }
 
 .car { 
@@ -397,6 +504,7 @@ transform: rotate(90deg);
 .continuation { 
   transform: translate(206%, -414%);
 }
+
 
 .cont {
   transform: translate(309%, -620%);
